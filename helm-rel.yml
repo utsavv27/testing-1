@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
   name: testing1
-  namespace: ray-1
+  namespace: helm-flux-test
 spec:
   interval: 5m
   chart:
@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: helm-repo
-        namespace: ray-1
+        namespace: helm-flux-test
       # valuesFiles:
   values:
       # Default values for kuberay-operator.
@@ -162,7 +162,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: helm-repo
-        namespace: ray-1
+        namespace: helm-flux-test
   values:
       # Default values for ray-cluster.
       # This is a YAML-formatted file.
