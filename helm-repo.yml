@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: helm-repo
-  namespace: ray-1
+  namespace: helm-flux-test
 spec:
   interval: 1m
   url: https://ray-project.github.io/kuberay-helm/
