@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: helm-repo
         namespace: helm-flux-test
-      # valuesFiles:
+
   values:
       # Default values for kuberay-operator.
       # This is a YAML-formatted file.
