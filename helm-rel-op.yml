@@ -88,7 +88,7 @@ spec:
 
 
       # If rbacEnable is set to false, no RBAC resources will be created, including the Role for leader election, the Role for Pods and Services, and so on.
-      rbacEnable: false
+      rbacEnable: true
 
       # When crNamespacedRbacEnable is set to true, the KubeRay operator will create a Role for RayCluster preparation (e.g., Pods, Services)
       # and a corresponding RoleBinding for each namespace listed in the "watchNamespace" parameter. Please note that even if crNamespacedRbacEnable
@@ -97,7 +97,7 @@ spec:
       # Note:
       # (1) This variable is only effective when rbacEnable and singleNamespaceInstall are both set to true.
       # (2) In most cases, it should be set to true, unless you are using a Kubernetes cluster managed by GitOps tools such as ArgoCD.
-      crNamespacedRbacEnable: false
+      crNamespacedRbacEnable: true
 
       # When singleNamespaceInstall is true:
       # - Install namespaced RBAC resources such as Role and RoleBinding instead of cluster-scoped ones like ClusterRole and ClusterRoleBinding so that
@@ -105,7 +105,7 @@ spec:
       #   (Please note that this excludes the CRDs, which can only be installed at the cluster scope.)
       # - If "watchNamespace" is not set, the KubeRay operator will, by default, only listen
       #   to resource events within its own namespace.
-      singleNamespaceInstall: false
+      singleNamespaceInstall: true
 
       # The KubeRay operator will watch the custom resources in the namespaces listed in the "watchNamespace" parameter.
       # watchNamespace:
