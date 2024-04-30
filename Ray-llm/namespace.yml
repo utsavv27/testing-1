@@ -9,8 +9,3 @@ kind: Namespace
 metadata:
   name: gpu-operator
 
---- 
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: node-feature-discovery
