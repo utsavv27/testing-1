@@ -4,5 +4,5 @@ metadata:
   name: helm-repo-nfd
   namespace: node-feature-discovery
 spec:
-  interval: 1m
+  interval: 1m 
   url: https://kubernetes-sigs.github.io/node-feature-discovery/charts
