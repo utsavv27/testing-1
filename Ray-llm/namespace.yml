@@ -3,12 +3,12 @@ kind: Namespace
 metadata:
   name: ray-llm
 
----
 
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: node-feature-discovery
+
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: node-feature-discovery
 
 ---
 
