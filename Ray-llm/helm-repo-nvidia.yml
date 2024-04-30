@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: helm-repo-nvidia
-  namespace: Ray-llm
+  namespace: ray-llm
 spec:
   interval: 1m
   url: https://helm.ngc.nvidia.com/nvidia/
