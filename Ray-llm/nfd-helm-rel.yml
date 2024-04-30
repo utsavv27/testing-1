@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
   name: ndf-rel
-  namespace: ray-llm
+  namespace: node-feature-discovery
 spec:
   interval: 5m
   chart:
@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: helm-repo-nfd
-        namespace: ray-llm
+        namespace: node-feature-discovery
   values:
       image:
         repository: registry.k8s.io/nfd/node-feature-discovery
