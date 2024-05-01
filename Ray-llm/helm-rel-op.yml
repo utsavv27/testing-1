@@ -50,7 +50,7 @@ spec:
         # requests:
         #   cpu: 100m
         #   memory: 512Mi
-          # nvidia.com/gpu: 1
+
       logging:
         # Log encoder to use for stdout (one of 'json' or 'console', default is 'json')
         stdoutEncoder: ""
@@ -105,7 +105,7 @@ spec:
       #   (Please note that this excludes the CRDs, which can only be installed at the cluster scope.)
       # - If "watchNamespace" is not set, the KubeRay operator will, by default, only listen
       #   to resource events within its own namespace.
-      singleNamespaceInstall: true
+      singleNamespaceInstall: false
 
       # The KubeRay operator will watch the custom resources in the namespaces listed in the "watchNamespace" parameter.
       # watchNamespace:
@@ -144,4 +144,3 @@ spec:
       # Enabling this feature contributes to the robustness of Ray clusters.
       # - name: ENABLE_PROBES_INJECTION
       #   value: "true"
-

@@ -13,7 +13,7 @@ spec:
         name: helm-repo-nvidia
         namespace: gpu-operator
   values:
-    # Default values for gpu-operator.
+   # Default values for gpu-operator.
     # This is a YAML-formatted file.
     # Declare variables to be passed into your templates.
 
